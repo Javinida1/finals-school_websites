@@ -1,0 +1,202 @@
+* {
+box-sizing: border-box;
+}
+	body {
+		background-image: url(pictures/school1.jpg);
+  		font-family: Arial;
+ 		padding: 0;
+		font: normal .95em 'trebuchet ms', arial, sans-serif;
+		}
+	p { 
+		padding: 0 0 20px 0;
+  		line-height: 1.7em;
+		}
+	h1, h2, h3, h4, h5, h6 { 
+		font: normal 175% 'century gothic', arial, sans-serif;
+ 		 color: #43423F;
+ 		 margin: 0 0 15px 0;
+ 		 padding: 15px 0 5px 0;
+		}
+	h2 { 
+		font: normal 175% 'century gothic', arial, sans-serif;
+ 		 color: #1293EE;
+		}
+
+	h4, h5, h6 { 
+		margin: 0;
+  		padding: 0 0 5px 0;
+ 		 font: normal 120% arial, sans-serif;
+  		color: #1293EE;
+		}
+
+	h5, h6 { 
+		font: italic 95% arial, sans-serif;
+ 	 	padding: 0 0 15px 0;
+ 	 	color: #000;
+		}
+
+	h6 { 
+		color: #362C20;
+		}
+	.leftcolumn {   
+  		float: left;
+ 		 width: 100%;
+		}
+
+	.row:after {
+  		content: "";
+ 	 	display: table;
+  		clear: both;
+		}
+
+
+	.card {
+  		background-image: url('pictures/school2.jpg');
+      	 	 background-repeat: no-repeat;
+ 		 padding: 20px;
+ 	 	margin-top: 0px;
+		}
+
+
+
+	.text {
+		text-align: center;
+	}
+
+	ul {
+ 		 list-style-type: none;
+ 		 margin: 0;
+ 		 padding: 0;
+  		overflow: hidden;
+  		background-color: skyblue;
+	}
+
+	li {
+  		float: right;
+		}
+
+	li a {
+ 		 display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+		}
+
+	li a:hover:not(.active) {
+  		background-color: blue;
+		}
+
+
+	.row {  
+ 	 	display: flex;
+  		flex-wrap: wrap;
+		margin-top: 2px;
+ 
+		}
+
+
+	.side {
+  		flex: 30%;
+ 	 	background-color: #f1f1f1;
+  		padding: 20px;
+		background-color: skyblue;
+		}
+
+
+	.main {
+ 		 flex: 70%;
+  		background-color: white;
+ 		 padding: 20px;
+		}
+
+	.img {
+	 	 background-image: url(pictures/school2.jpg);
+  		width: 100%;
+ 		 padding: 20px;
+		}
+	.pack {
+		background-color: skyblue;
+  		width: 100%;
+ 		 padding: 20px;
+		}
+	
+	
+
+	.form_settings { 
+		margin: 15px 0 0 0;
+		}
+
+	.form_settings p
+		{ padding: 0 0 4px 0;}
+
+	.form_settings span
+		{ float: left; 
+ 		 width: 200px; 
+  		text-align: left;}
+  
+	.form_settings input, .form_settings textarea
+		{ padding: 5px; 
+ 		 width: 299px; 
+  		font: 100% arial; 
+ 		 border: 1px solid #E5E5DB; 
+ 		 background: skyblue; 
+  		color: #47433F;}
+  
+	.form_settings .submit
+		{ font: 100% arial; 
+ 		 border: 1px solid; 
+  		width: 99px; 
+  		margin: 0 0 0 212px; 
+ 		 height: 33px;
+  		padding: 2px 0 3px 0;
+  		cursor: pointer; 
+  		background: #1293EE; 
+ 		 color: #FFF;}
+
+	.form_settings textarea, .form_settings select
+		{ font: 100% arial; 
+  		width: 299px;}
+
+	.form_settings select
+		{ width: 310px;}
+
+	.form_settings .checkbox
+		{ margin: 4px 0; 
+		  padding: 0; 
+		  width: 14px;
+ 		 border: 0;
+  		background: none;}
+
+
+	.footer {
+		  padding: 10px;
+ 		 text-align: center;
+  		background: skyblue;
+		margin-top: 2px;
+		color: black; 
+		}
+	.footer a
+		{ color: black;
+  		text-decoration: none;}
+
+	.footer a:hover
+		{ color: black;
+	 	 text-decoration: underline;}
+
+	img {
+ 		 border-radius: 4px;
+  		padding: 5px;
+  		width: 100px;
+		}
+
+	img:hover {
+ 		 box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+		}
+
+
+	@media screen and (max-width: 700px) {
+  		.row, .navbar , .pack{   
+    		flex-direction: column;
+	 }
+}
